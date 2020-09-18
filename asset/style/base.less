@@ -1,0 +1,228 @@
+
+@import "icons.less";
+@import "color.less";
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Calibri;
+    background-color: @page_bg;
+}
+ul li{
+    list-style: none;
+}
+.login {
+    ul li{
+        background-color: darkblue;
+    }
+    background-color: darkblue;
+
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 45%;
+    height: 70%;
+    border: 0.5px solid #969595;
+    padding: 20px;
+}
+.signup {
+    ul li{
+        background-color: green;
+    }
+    background-color: green;
+
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 45%;
+    height: 70%;
+    border: 0.5px solid #969595;
+    padding: 20px;
+}
+.btn{
+    color: white;
+    background: cornflowerblue;
+    width: 50px;
+    height: 25px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+}
+
+.board{
+    overflow: hidden;
+    width: 80%;
+    height: 85%;
+    position: relative;
+    margin: auto auto;
+    border: 1px solid #969595;
+}
+
+.member{
+    float: left;
+    display: inline;
+    height: 100%;
+    width: 30%;
+    border:1px solid #969595;
+    overflow-y: scroll;
+}
+
+.show_memners{
+    position: relative;
+    border-bottom: 1px solid #969595;
+    width: 99.9%;
+    cursor: pointer;
+    height: 20%;
+    b{
+        background-color: beige;
+    }
+    background-color: beige;
+    &:hover{
+        background-color: bisque;
+        b{
+            background-color: bisque;
+        }
+    }
+}
+.Img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 15%;
+}
+.names{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+.chat_bottom{
+    height: 8%;
+    width: 97%;
+    padding: 7px 5px;
+    border-top: 1px solid #969595;
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+    left: 3px;
+    ul li{
+        display: inline;
+    }
+    textarea{
+        width: 50%;
+        float: left;
+    }
+    li:nth-child(3){
+        float: right;
+    }
+}
+
+.chat{
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 69%;
+    border: 1px solid #969595;
+}
+.chat_top{
+    position: relative;
+    height: 12%;
+    width: 99%;
+    margin: auto auto;
+}
+.chat_middel{
+    border-top: 1px solid #969595;
+    height: 78%;
+    width: 99%;
+    background-color: greenyellow;
+    margin: auto auto;
+    position: relative;
+    overflow-y: scroll;
+}
+
+
+.right{
+    position: absolute;
+    right: 8px;
+    //width: 30px;
+    height: 20px;
+    padding: 10px 20px;
+    border-radius: 20%;
+    background-color: crimson;
+    color: white;
+    display: inline-block;
+}
+
+.left{
+    position: absolute;
+    left: 5px;
+   // width: 30px;
+    height: 20px;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 20%;
+    display: inline-block;
+
+}
+.search{
+    position: relative;
+    width: 130px;
+    height: 42px;
+    border: 1px solid #666666;
+    z-index: 10000;
+    &:hover {
+        background-color: gold;
+       i,b{
+            background-color: gold;
+        }
+
+    }
+    }
+
+.result{
+    cursor: pointer;
+     z-index: 10000;
+ }
+
+.active{
+    position: absolute;
+    z-index: 10000;
+    left: 0;
+    top: 30px;
+    padding: 10px 40px;
+    transition: 0.3s;
+}
+.inactive{
+    z-index: 10000;
+    padding: 10px 40px;
+    position: absolute;
+    left: -190px;
+    top: 30px;
+    transition:  0.6s
+}
+.navBtn{
+    position: absolute;
+    left: 0;
+    z-index: 10000;
+    padding: 10px;
+    background-color: #f18a36;
+    cursor: pointer;
+}
+.nav1{
+    background-color: #666666;
+    & li,a {
+        background-color: #666666;
+        color: white;
+        text-decoration-line: none;
+    }
+    & li,a:hover {
+        background-color: #666666;
+        color: gold;
+        text-decoration-line: none;
+    }
+}

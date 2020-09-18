@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !\.(jpg|png|css|js|html|ttf|svg|woff|eot|map)$
+RewriteRule .* index.php [L]
+
+
