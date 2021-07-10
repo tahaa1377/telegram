@@ -38,10 +38,7 @@ $(function () {
                             }else {
                                 autoscroll=true;
                             }
-                        }) ;
-
-
-
+                        });
                     }
                 }
             );
